@@ -32,3 +32,11 @@
 /Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/obj/Debug/net8.0/RandomThoughtsApi.pdb
 /Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/obj/Debug/net8.0/RandomThoughtsApi.genruntimeconfig.cache
 /Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/obj/Debug/net8.0/ref/RandomThoughtsApi.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/maide/Desktop/salt/Random-Thoughts-api/RandomThoughtsApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
