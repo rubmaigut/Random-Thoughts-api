@@ -1,0 +1,6 @@
+@RandomThoughtsApi_HostAddress = http://localhost:5152
+
+GET {{RandomThoughtsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
