@@ -10,13 +10,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(auth => 
     {
-        options.Authority = $"https://accounts.google.com";
-        options.Audience = builder.Configuration["Authentication:Google:ClientId"];
+        auth.Authority = "https://enabling-monkfish-46.clerk.accounts.dev";
+        auth.Audience = "https://enabling-monkfish-46.clerk.accounts.dev/.well-known/jwks.json";
     });
+
 builder.Services.AddSwaggerGen(option =>
 {
     option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
