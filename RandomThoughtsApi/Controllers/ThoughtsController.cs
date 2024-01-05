@@ -4,7 +4,7 @@ namespace RandomThoughtsApi.Controllers;
 
 [ApiController]
 [Route("/[controller]")]
-public class MessagesController : ControllerBase
+public class ThoughtsController : ControllerBase
 {
 
   [HttpGet]
