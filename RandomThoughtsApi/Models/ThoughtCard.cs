@@ -2,7 +2,7 @@ namespace RandomThoughtsApi.Models;
 
 public class ThoughtCard
 { 
-        public string Id = Guid.NewGuid().ToString();
+        public string Id { get; set; } = Guid.NewGuid().ToString();
     
         public string ThoughtContent { get; set; }
     
