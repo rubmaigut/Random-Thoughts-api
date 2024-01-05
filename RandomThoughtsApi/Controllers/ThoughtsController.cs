@@ -21,7 +21,7 @@ public class ThoughtsController : ControllerBase
     return Ok(_repository.GetAll());
   }
 
-  [HttpPost]
+  [HttpPost("/[controller]/new")]
   public ActionResult<ThoughtCard> PostMessage([FromBody] ThoughtCard thought)
   {
     var newThought = _repository.AddThought(thought);
