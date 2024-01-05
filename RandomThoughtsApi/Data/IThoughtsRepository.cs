@@ -4,7 +4,12 @@ namespace RandomThoughtsApi.Data;
 
 public interface IThoughtsRepository
 {
-   IEnumerable<ThoughtCard> GetAll(); 
-   //List<ThoughtCard> GetByUser(string userId);
+   IEnumerable<ThoughtCard> GetAll();
+
+   ThoughtCard AddThought(ThoughtCard thought);
+
+   void UpdateLikes(string id);
    
+   IEnumerable<ThoughtCard> GetByUser(string userId);
+
 }
