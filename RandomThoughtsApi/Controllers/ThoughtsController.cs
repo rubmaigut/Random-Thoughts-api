@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RandomThoughtsApi.Data;
+using RandomThoughtsApi.Models;
 
 namespace RandomThoughtsApi.Controllers;
 
@@ -15,8 +16,15 @@ public class ThoughtsController : ControllerBase
   }
   
   [HttpGet]
-  public ActionResult GetAllMessages()
+  public ActionResult<IEnumerable<ThoughtCard>> GetAllMessages()
   {
     return Ok(_repository.GetAll());
+  }
+
+  [HttpPost]
+  public ActionResult<ThoughtCard> PostMessage([FromBody] ThoughtCard thought)
+  {
+    var newThought = _repository.AddThought(thought);
+    return CreatedAtAction(nameof(GetAllMessages), new { id = newThought.Id }, newThought);
   }
 }
